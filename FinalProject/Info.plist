@@ -16,6 +16,17 @@
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.354520093949-fs9ucjgir7ddl0e4v0k3ob0pn7uvqbf5</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
@@ -62,5 +73,15 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>This app will need the device location to determine the distance from a spot to a device, and to plot the user&apos;s location on a map.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>This app will need the device location to determine the distance from a spot to a device, and to plot the user&apos;s location on a map.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Snacktacular will need access to your camera if you&apos;d like to add a photo</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Snacktacular will need access to your photo library if you&apos;d like to add a photo</string>
+	<key></key>
+	<string></string>
 </dict>
 </plist>
