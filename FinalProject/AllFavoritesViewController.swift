@@ -51,6 +51,9 @@ class AllFavoritesViewController: UIViewController {
         case 3:
             performSegue(withIdentifier: "NotificationsSegue", sender: nil)
             segmentController.selectedSegmentIndex = 0
+        case 4:
+            performSegue(withIdentifier: "SearchsSegue", sender: nil)
+            segmentController.selectedSegmentIndex = 0
         default:
             return
         }

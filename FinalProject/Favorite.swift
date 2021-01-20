@@ -40,7 +40,7 @@ class Favorite: NSObject {
             let name = dictionary["name"] as! String? ?? ""
             let postingUserID = dictionary["postingUserID"] as! String? ?? ""
         self.init(name: name, postingUserID: postingUserID, documentID: "")
-        }
+    }
     
     func saveData(completion: @escaping (Bool) -> ()) {
             let db = Firestore.firestore()

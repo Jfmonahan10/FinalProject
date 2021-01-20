@@ -16,6 +16,10 @@
 		8F1DFBA82580B0EF00F7750D /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1DFBA72580B0EF00F7750D /* NotificationViewController.swift */; };
 		8F1DFE172582AA2100F7750D /* ProfileUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1DFE162582AA2000F7750D /* ProfileUser.swift */; };
 		8F1DFE1C2582AA4200F7750D /* ProfileUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1DFE1B2582AA4200F7750D /* ProfileUsers.swift */; };
+		8F50D5A325B77206006BC875 /* PrivateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F50D5A225B77206006BC875 /* PrivateViewController.swift */; };
+		8F50D5C925B79EA3006BC875 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F50D5C825B79EA3006BC875 /* InformationViewController.swift */; };
+		8F50D5EF25B7AF68006BC875 /* PersonalPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F50D5EE25B7AF67006BC875 /* PersonalPageViewController.swift */; };
+		8F50D5F425B7AF84006BC875 /* PersonalPageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F50D5F325B7AF84006BC875 /* PersonalPageDetailViewController.swift */; };
 		8F56235B2583738B00E52C1E /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F56235A2583738B00E52C1E /* Activity.swift */; };
 		8F56236525837D9700E52C1E /* ActivityStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F56236425837D9700E52C1E /* ActivityStruct.swift */; };
 		8F5624302583A9E300E52C1E /* NotificationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F56242F2583A9E300E52C1E /* NotificationDetailViewController.swift */; };
@@ -62,6 +66,10 @@
 		8F1DFBA72580B0EF00F7750D /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		8F1DFE162582AA2000F7750D /* ProfileUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUser.swift; sourceTree = "<group>"; };
 		8F1DFE1B2582AA4200F7750D /* ProfileUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUsers.swift; sourceTree = "<group>"; };
+		8F50D5A225B77206006BC875 /* PrivateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateViewController.swift; sourceTree = "<group>"; };
+		8F50D5C825B79EA3006BC875 /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
+		8F50D5EE25B7AF67006BC875 /* PersonalPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalPageViewController.swift; sourceTree = "<group>"; };
+		8F50D5F325B7AF84006BC875 /* PersonalPageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalPageDetailViewController.swift; sourceTree = "<group>"; };
 		8F56235A2583738B00E52C1E /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		8F56236425837D9700E52C1E /* ActivityStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityStruct.swift; sourceTree = "<group>"; };
 		8F56242F2583A9E300E52C1E /* NotificationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDetailViewController.swift; sourceTree = "<group>"; };
@@ -163,6 +171,10 @@
 				8F1DFB0225807DE500F7750D /* UIBarButton+hide.swift */,
 				8F1DFADC25807BA600F7750D /* UIViewController+alert.swift */,
 				8FC70E522579B96600AC6FD9 /* Main.storyboard */,
+				8F50D5F325B7AF84006BC875 /* PersonalPageDetailViewController.swift */,
+				8F50D5EE25B7AF67006BC875 /* PersonalPageViewController.swift */,
+				8F50D5C825B79EA3006BC875 /* InformationViewController.swift */,
+				8F50D5A225B77206006BC875 /* PrivateViewController.swift */,
 				8FC70E552579B96A00AC6FD9 /* Assets.xcassets */,
 				8FC70E572579B96A00AC6FD9 /* LaunchScreen.storyboard */,
 				8FC70E5A2579B96A00AC6FD9 /* Info.plist */,
@@ -391,7 +403,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F5624842583BDF900E52C1E /* AllFavoritesViewController.swift in Sources */,
+				8F50D5C925B79EA3006BC875 /* InformationViewController.swift in Sources */,
 				8F5624592583B83700E52C1E /* Favorite.swift in Sources */,
+				8F50D5F425B7AF84006BC875 /* PersonalPageDetailViewController.swift in Sources */,
 				8F56235B2583738B00E52C1E /* Activity.swift in Sources */,
 				8FC70E512579B96600AC6FD9 /* LoginViewController.swift in Sources */,
 				8F56236525837D9700E52C1E /* ActivityStruct.swift in Sources */,
@@ -403,7 +417,9 @@
 				8F56245E2583BA3400E52C1E /* Favorites.swift in Sources */,
 				8F1DFADD25807BA600F7750D /* UIViewController+alert.swift in Sources */,
 				8F1DFBA82580B0EF00F7750D /* NotificationViewController.swift in Sources */,
+				8F50D5EF25B7AF68006BC875 /* PersonalPageViewController.swift in Sources */,
 				8F1DFE1C2582AA4200F7750D /* ProfileUsers.swift in Sources */,
+				8F50D5A325B77206006BC875 /* PrivateViewController.swift in Sources */,
 				8F1DFA61258068DE00F7750D /* PlanViewController.swift in Sources */,
 				8F1DFE172582AA2100F7750D /* ProfileUser.swift in Sources */,
 				8F1DFB122580851E00F7750D /* UIView+addBorder.swift in Sources */,
