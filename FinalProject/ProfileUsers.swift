@@ -8,6 +8,8 @@ import Foundation
 import Firebase
 
 class ProfileUsers {
+
+    
     var userArray: [ProfileUser] = []
     var db: Firestore!
     

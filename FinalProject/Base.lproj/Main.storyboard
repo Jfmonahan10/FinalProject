@@ -43,6 +43,7 @@
                                     <segment title="" image="person.3" catalog="system"/>
                                     <segment title="" image="mappin.and.ellipse" catalog="system"/>
                                     <segment title="" image="magnifyingglass" catalog="system"/>
+                                    <segment title="" image="gamecontroller" catalog="system"/>
                                 </segments>
                                 <connections>
                                     <action selector="segmentButtonPressed:" destination="TJk-cn-juM" eventType="valueChanged" id="b9T-uz-Kt6"/>
@@ -106,6 +107,7 @@
                         <segue destination="rmw-Fj-1iu" kind="show" identifier="PrivateEventsSegue" id="ei1-Nu-5BD"/>
                         <segue destination="nWb-A3-uhh" kind="show" identifier="NotificationsSegue" id="ygr-mN-21b"/>
                         <segue destination="JHs-y0-HB7" kind="show" identifier="SearchsSegue" id="jLX-e2-gen"/>
+                        <segue destination="pgX-CQ-zsJ" kind="show" identifier="Profile Segue" id="AeF-6s-Hhu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zcw-Ai-tgT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -345,7 +347,7 @@
             <objects>
                 <viewController id="ywy-OR-wBU" customClass="PersonalPageDetailViewController" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I2k-GG-fqD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="kh9-LB-W82">
@@ -467,7 +469,7 @@
             <objects>
                 <viewController id="qEv-rg-pph" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="u0s-br-ke5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2nE-n5-Xuc">
@@ -831,7 +833,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vsc-2J-hss" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3205.7971014492755" y="760.71428571428567"/>
+            <point key="canvasLocation" x="3184" y="863"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5FK-7O-Kt7">
@@ -1089,6 +1091,7 @@
     </scenes>
     <resources>
         <image name="arrow.clockwise" catalog="system" width="115" height="128"/>
+        <image name="gamecontroller" catalog="system" width="128" height="80"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="mappin.and.ellipse" catalog="system" width="118" height="128"/>
         <image name="paperplane" catalog="system" width="128" height="118"/>

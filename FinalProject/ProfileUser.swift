@@ -51,7 +51,12 @@ class ProfileUser{
     
     func saveIFNewUser(completion: @escaping(Bool) -> ()){
         let db = Firestore.firestore()
-        let userRef = db.collection("users").document(documentID)
+        guard let postingUserID = Auth.auth().currentUser?.uid else {
+            print("😡 ERROR: Could not save data because we dno't have a valid postingUserID.")
+            return completion(false)
+        }
+        self.documentID = postingUserID
+        let userRef = db.collection("users").document(self.documentID)
                 userRef.getDocument { (document, error) in
                     guard error == nil else {
                         print("ERROR: could not access document for user \(self.documentID)")

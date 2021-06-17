@@ -7,7 +7,9 @@
 
 
 import Foundation
+import UIKit
 import Firebase
+
 
 
 class Favorite: NSObject {
@@ -42,6 +44,7 @@ class Favorite: NSObject {
         self.init(name: name, postingUserID: postingUserID, documentID: "")
     }
     
+
     func saveData(completion: @escaping (Bool) -> ()) {
             let db = Firestore.firestore()
             // Grab the user ID
@@ -55,7 +58,7 @@ class Favorite: NSObject {
             // if we HAVE saved a record, we'll have an ID, otherwise .addDocument will create one.
             if self.documentID == "" { // Create a new document via .addDocument
                 var ref: DocumentReference? = nil // Firestore will create a new ID for us
-                ref = db.collection("favorites").addDocument(data: dataToSave){ (error) in
+                ref = db.collection("users").document(self.postingUserID).collection("favorites").addDocument(data: dataToSave){ (error) in
                     guard error == nil else {
                         print("😡 ERROR: adding document \(error!.localizedDescription)")
                         return completion(false)
@@ -65,7 +68,9 @@ class Favorite: NSObject {
                     completion(true)
                 }
             } else { // else save to the existing documentID w/.setData
-                let ref = db.collection("favorites").document(self.documentID)
+                let db = Firestore.firestore()
+                let userRef = db.collection("users").document(documentID)
+                let ref = userRef.collection("favorites").document(self.documentID)
                 ref.setData(dataToSave) { (error) in
                     guard error == nil else {
                         print("😡 ERROR: updating document \(error!.localizedDescription)")
