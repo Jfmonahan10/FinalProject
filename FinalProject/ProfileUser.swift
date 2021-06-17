@@ -49,7 +49,7 @@ class ProfileUser{
         self.init(email: email, displayName: displayName, photoURL: photoURL, userSince: userSince, documentID: "")
     }
     
-    func saveIFNewUser(completion: @escaping(Bool) -> ()){
+    func saveIFNewUser(completion: @escaping(Bool) -> ()){ 
         let db = Firestore.firestore()
         guard let postingUserID = Auth.auth().currentUser?.uid else {
             print("😡 ERROR: Could not save data because we dno't have a valid postingUserID.")

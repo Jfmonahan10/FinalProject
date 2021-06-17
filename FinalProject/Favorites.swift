@@ -14,7 +14,7 @@ class Favorites {
     var db: Firestore!
     var documentID: String!
     var profileUser: ProfileUser!
-    
+     
     
     init() {
         db = Firestore.firestore()

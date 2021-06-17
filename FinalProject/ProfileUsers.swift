@@ -22,7 +22,7 @@ class ProfileUsers {
             guard error == nil else {
                 print("ERROR: adding the snapshot listener \(error!.localizedDescription)")
                 return completed()
-            }
+            } 
             self.userArray = []
             for document in querySnapshot!.documents {
                 let profileUser = ProfileUser(dictionary: document.data())
